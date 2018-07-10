@@ -7,10 +7,10 @@ $order = $store->make_order($_GET['variant_id']);
 $orders = $store->get_orders();
 ?>
 <pre>
-	<? var_dump($order)?>
+	<?php print_r($order)?>
 </pre>
- 
+
 Orders
 <pre>
-	<? var_dump($orders)?>
+	<?php print_r($orders)?>
 </pre>

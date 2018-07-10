@@ -147,8 +147,8 @@ class Store
 		if ($err) {
 			echo "cURL Error #:" . $err; exit;
 		} else {
-			$this->json = $response;
-			return json_decode($response, true);
+			$this->json = json_decode($response, true);
+			return $this->json;
 		}
 	}
 }

@@ -1,0 +1,1461 @@
+@font-face {
+  font-family: "NexaBlack";
+  src: url('../fonts/Nexa/NexaBlack.eot');
+  src: url('../fonts/Nexa/NexaBlack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Nexa/NexaBlack.woff2') format('woff2'),
+  url('../fonts/Nexa/NexaBlack.woff') format('woff'),
+  url('../fonts/Nexa/NexaBlack.ttf')  format('truetype'),
+  url('../fonts/Nexa/NexaBlack.svg#NexaBlack') format('svg');
+}
+
+@font-face {
+  font-family: "NexaXBold";
+  src: url('../fonts/Nexa/NexaXBold.eot');
+  src: url('../fonts/Nexa/NexaXBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Nexa/NexaXBold.woff2') format('woff2'),
+  url('../fonts/Nexa/NexaXBold.woff') format('woff'),
+  url('../fonts/Nexa/NexaXBold.ttf')  format('truetype'),
+  url('../fonts/Nexa/NexaXBold.svg#NexaXBold') format('svg'); }
+
+.desktophd {
+  width: 100%;
+  /*height: 100vh;*/
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 1.0)
+}
+
+a {
+  text-decoration: none
+}
+
+div {
+  -webkit-text-size-adjust: none
+}
+
+.rectanglecopy {
+
+}
+
+.rectanglecopy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 773px;
+  height: 454px;
+  width: 1140px;
+  position: absolute;
+  margin: 0;
+  left: 156px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(221, 221, 221, 1.0)
+}
+
+.rectanglecopy4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1244px;
+  height: 466px;
+  width: 1140px;
+  position: absolute;
+  margin: 0;
+  left: 156px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(221, 221, 221, 1.0)
+}
+
+.event2018vipexper {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 318px;
+  height: auto;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 70px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 91px;
+  width: 100%;
+}
+
+.vippackages {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 724px;*/
+  height: auto;
+  width: auto;
+  /*position: absolute;*/
+  margin: 0;
+  /*left: 650px;*/
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 26px;
+  margin-top: 89px;
+  margin-bottom: 23px;
+}
+
+.date {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 942px;*/
+  height: auto;
+  /*position: absolute;*/
+  margin: 0;
+
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+
+  display: inline-block;
+  width: 306px;
+  vertical-align: top;
+  margin-top: 169px;
+}
+
+.saturdayaugust18 {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 1419px;*/
+  height: auto;
+  width: auto;
+  /*position: absolute;*/
+  margin: 0;
+  /*left: 182px;*/
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 40px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 86px;
+  display: inline-block;
+}
+
+.comparepackages {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 1178px;*/
+  height: auto;
+  width: auto;
+  /*position: absolute;*/
+  margin: 0;
+  left: 1153px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: right;
+  margin-right: 16px;
+  line-height: 32px;
+  margin-bottom: 17px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.comparepackagescopy {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1660px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 1153px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  line-height: 32px
+}
+
+.a2018eeallright {
+  background-color: rgba(255, 255, 255, 0.0);
+
+  margin: 0;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  line-height: 32px;
+  text-align: center;
+}
+
+.oval {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 40px;
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  margin: 0;
+  left: 156px;
+  z-index: 2;
+}
+
+.dontseesomethingy {
+  background-color: rgba(255, 255, 255, 0.0);
+
+  height: auto;
+  width: auto;
+
+  margin: 0;
+
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+
+.miscbigbuttoncopy {
+  background-color: rgba(255, 255, 255, 0.0);
+
+  height: 50px;
+  width: 364px;
+
+  margin: 0;
+
+}
+
+.miscbigbuttoncopy .button-contact {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 364px;
+
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.miscbigbuttoncopy .upgarde {
+  background-color: rgba(255, 255, 255, 0.0);
+
+  height: auto;
+
+  margin: 0;
+
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: .44px;
+  line-height: 17px;
+}
+
+.ee {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 63px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 178px;
+  -ms-transform: rotate(-33deg);
+  -webkit-transform: rotate(-33deg);
+  transform: rotate(-33deg);
+  font-family: 'NexaXBold', Helvetica, Arial, serif;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  line-height: 39px;
+  z-index: 3;
+}
+
+.group {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1270px;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 466px
+}
+
+.group .rectanglecopy3 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group .ultimateknockout {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 23px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 35px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.group .onticketmastercom {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 77px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 649px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.group .miscbigbuttoncopy1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 24px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.group .miscbigbuttoncopy1 .background1 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group .miscbigbuttoncopy1 .upgarde1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group .miscbigbuttoncopy4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 23px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.group .miscbigbuttoncopy4 .background2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.group .miscbigbuttoncopy4 .buy {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group .rectangle5 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 67px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 165px;
+  opacity: .44
+}
+
+.group .group5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 53px;
+  height: 26px;
+  width: 120px;
+  position: absolute;
+  margin: 0;
+  left: 35px
+}
+
+.group .group5 .rectangle5copy8 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 0;
+  height: 26px;
+  width: 120px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .44
+}
+
+.group .group5 .mostpopular {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 4px;
+  font-family: 'NexaXBold', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  line-height: 23px
+}
+
+.group .rectangle5copy3 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 89px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.groupcopy {
+  background-color: rgba(255, 255, 255, 0.0);
+
+  height: 121px;
+  width: 814px;
+  /*position: absolute;*/
+  margin: 0;
+  margin-top: 19px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.groupcopy .rectanglecopy31 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.groupcopy .ultimateknockout1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 25px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 35px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.groupcopy .onticketmastercom1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 77px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 649px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.groupcopy .miscbigbuttoncopy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 24px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.groupcopy .miscbigbuttoncopy2 .background3 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.groupcopy .miscbigbuttoncopy2 .upgarde2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.groupcopy .miscbigbuttoncopy41 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 23px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.groupcopy .miscbigbuttoncopy41 .background4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.groupcopy .miscbigbuttoncopy41 .buy1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.groupcopy .rectangle51 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 65px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 160px;
+  opacity: .44
+}
+
+.groupcopy .rectangle5copy31 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 89px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1399px;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 466px
+}
+
+.group2 .rectanglecopy32 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group2 .goldbuckle {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 28px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 35px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.group2 .onticketmastercom2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 80px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 641px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.group2 .miscbigbuttoncopy3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 27px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.group2 .miscbigbuttoncopy3 .background5 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group2 .miscbigbuttoncopy3 .upgarde3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group2 .miscbigbuttoncopy42 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 26px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.group2 .miscbigbuttoncopy42 .background6 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.group2 .miscbigbuttoncopy42 .buy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group2 .rectangle5copy {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 67px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group2 .rectangle5copy4 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 89px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group2 .rectangle5copy5 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 67px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 145px;
+  opacity: .44
+}
+
+.group2copy {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 921px;*/
+  height: 121px;
+  width: 814px;
+  /*position: absolute;*/
+  margin: 0;
+  margin-bottom: 8px;
+  /*left: 466px*/
+  position: relative;
+}
+
+.group2copy .rectanglecopy33 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group2copy .goldbuckle1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 28px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 35px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.group2copy .onticketmastercom3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 80px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 641px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.group2copy .miscbigbuttoncopy5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 27px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.group2copy .miscbigbuttoncopy5 .background7 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group2copy .miscbigbuttoncopy5 .upgarde4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group2copy .miscbigbuttoncopy43 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 26px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.group2copy .miscbigbuttoncopy43 .background8 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.group2copy .miscbigbuttoncopy43 .buy3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group2copy .rectangle5copy1 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 67px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group2copy .rectangle5copy41 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 89px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group2copy .rectangle5copy51 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 67px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 145px;
+  opacity: .44
+}
+
+.group3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1527px;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 466px
+}
+
+.group3 .rectanglecopy34 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group3 .anniversary {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 32px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.group3 .onticketmastercom4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 84px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 641px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.group3 .miscbigbuttoncopy6 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 31px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.group3 .miscbigbuttoncopy6 .background9 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group3 .miscbigbuttoncopy6 .upgarde5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group3 .miscbigbuttoncopy44 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 30px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.group3 .miscbigbuttoncopy44 .background10 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.group3 .miscbigbuttoncopy44 .buy4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group3 .rectangle5copy6 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 71px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group3 .rectangle5copy7 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 93px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group3 .rectangle5copy81 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 71px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 145px;
+  opacity: .44
+}
+
+.group3copy {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 1049px;*/
+  height: 121px;
+  width: 814px;
+  /*position: absolute;*/
+  margin: 0;
+  /*left: 466px*/
+  position: relative;
+}
+
+.group3copy .rectanglecopy35 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 0;
+  height: 121px;
+  width: 814px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group3copy .anniversary1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 32px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  font-family: 'NexaBlack', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: .3px;
+  line-height: 32px
+}
+
+.group3copy .onticketmastercom5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 84px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 641px;
+  font-family: 'HelveticaNeue-Medium', Helvetica, Arial, serif;
+  font-size: 12px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 32px
+}
+
+.group3copy .miscbigbuttoncopy7 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 31px;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 400px
+}
+
+.group3copy .miscbigbuttoncopy7 .background11 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 50px;
+  width: 206px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group3copy .miscbigbuttoncopy7 .upgarde6 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: auto;
+  width: 189px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group3copy .miscbigbuttoncopy45 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 30px;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 619px
+}
+
+.group3copy .miscbigbuttoncopy45 .background12 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: 52px;
+  width: 174px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(80, 80, 80, 1.0)
+}
+
+.group3copy .miscbigbuttoncopy45 .buy5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 18px;
+  height: auto;
+  width: 133px;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(80, 80, 80, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group3copy .rectangle5copy61 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 71px;
+  height: 12px;
+  width: 104px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group3copy .rectangle5copy71 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 93px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 34px;
+  opacity: .44
+}
+
+.group3copy .rectangle5copy82 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 71px;
+  height: 12px;
+  width: 48px;
+  position: absolute;
+  margin: 0;
+  left: 145px;
+  opacity: .44
+}
+
+.group4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  /*top: 1779px;*/
+  height: 113px;
+  width: 601px;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+}
+
+.group4 .rectanglecopy5 {
+  background-color: rgba(225, 225, 225, 1.0);
+  top: 55px;
+  height: 58px;
+  width: 601px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .43
+}
+
+.group4 .rectanglecopy51 {
+  background-color: rgba(255, 255, 255, 1.0);
+  top: 62px;
+  height: 44px;
+  width: 430px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  border-radius: 4px
+}
+
+.group4 .signupandlearnab {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  font-family: 'NexaXBold', Helvetica, Arial, serif;
+  font-size: 18px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 36px
+}
+
+.group4 .email {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 66px;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 20px;
+  font-family: 'NexaLight', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: center;
+  line-height: 36px
+}
+
+.group4 .miscbigbuttoncopy8 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 62px;
+  height: 50px;
+  width: 139px;
+  position: absolute;
+  margin: 0;
+  left: 450px
+}
+
+.group4 .miscbigbuttoncopy8 .background13 {
+  background-color: rgba(122, 122, 122, 1.0);
+  top: 0;
+  height: 44px;
+  width: 139px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-radius: 3px
+}
+
+.group4 .miscbigbuttoncopy8 .upgarde7 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 13px;
+  height: auto;
+  cursor: pointer;
+  /*width: 52px;*/
+  position: absolute;
+  margin: 0;
+  left: 43px;
+  font-family: 'AppleSystemUIFont', Helvetica, Arial, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: .44px;
+  line-height: 17px
+}
+
+.group51 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 53px;
+  height: 26px;
+  width: 120px;
+  position: absolute;
+  margin: 0;
+  left: 35px;
+  z-index: 2;
+}
+
+.group51 .rectangle5copy83 {
+  background-color: rgba(215, 215, 215, 1.0);
+  top: 0;
+  height: 26px;
+  width: 120px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  opacity: .44
+}
+
+.group51 .mostpopular1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0;
+  height: auto;
+  width: auto;
+  position: absolute;
+  margin: 0;
+  left: 4px;
+  font-family: 'NexaXBold', Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1.0);
+  text-align: left;
+  line-height: 23px
+}
+
+.header {
+  width: 100%;
+  height: 635px;
+  position: relative;
+  background-color: rgba(222, 222, 222, 1.0);
+  top: 0;
+  margin: 0;
+  left: 0
+}
+
+.package {
+  background-color: rgba(255, 255, 255, 0.0);
+  max-width: 1140px;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(221, 221, 221, 1.0);
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.package-item {
+  background-color: rgba(225, 225, 225, 1.0);
+  display: inline-block;
+}
+
+.package-items {
+  position: relative;
+  /*background-color: red;*/
+  /*height: 200px;*/
+  /*width: 100%;*/
+  display: inline-block;
+}
+
+.contact-us-block {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+}
+
+.footer {
+  max-width: 1144px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 69px;
+}
+.a2018eeallright {
+  margin-top: 224px;
+  margin-bottom: 49px;
+}
+.day {
+  font-family: 'NexaBlack', sans-serif;
+  line-height: 86px;
+  font-size: 40px;
+}
+.sub_date {
+  font-family: 'NexaBold', sans-serif;
+  font-size: 30px;
+}
+
+
+
+
+

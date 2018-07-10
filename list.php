@@ -7,6 +7,74 @@ $store = new Store($shop_type);
 $items = $store->get_items_by_tag_an_type();
 $categories = $store->get_categories();
 ?>
+<div class="desktophd">
+	<div style="height: 100%; position:relative; margin:auto;">
+		<div class="header">
+			<div class="ee">EE</div>
+			<img class="oval" src="./desktophd_files/desktop hdoval.png">
+			<div class="rectanglecopy"></div>
+			<div class="event2018vipexper">EVENT 2018<br>VIP EXPERIENCES</div>
+		</div>
+		<div class="vippackages">VIP PACKAGES</div>
+
+		<div class="packages">
+			<div class="package">
+				<div class="date"><div class="day">FRIDAY</div>
+					<span class="sub_date">August 17</span></div>
+				<div class="package-items">
+					<?php foreach ($items as $item) { ?>
+						<div class="group2copy">
+							<div class="rectanglecopy33"></div>
+							<div class="goldbuckle1"><?= $item['title'] ?>﻿</div>
+							<div class="onticketmastercom3">on ticketmaster.com</div>
+							<div class="miscbigbuttoncopy5 buy-button">
+								<div class="background7"></div>
+								<form>
+									<input type="hidden" name="page" value="order">
+									<input type="hidden" name="shop" value="<?=$shop_type?>">
+									<input type="hidden" name="variant_id" value="<?=$item['variants'][0]['id']?>">
+									<button class="upgarde4" style="border: 0;">$<?=$item['variants'][0]['price']?> Upgrade Now</button>
+								</form>
+							</div>
+							<div class="miscbigbuttoncopy43 buy-button">
+								<div class="background8"></div>
+								<div class="buy3">$699 with ticket</div>
+							</div>
+							<div class="rectangle5copy1"></div>
+							<div class="rectangle5copy41"></div>
+							<div class="rectangle5copy51"></div>
+						</div>
+					<? } ?>
+				</div>
+				<div class="comparepackages">Compare packages</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="group4">
+				<div class="rectanglecopy5"></div>
+				<div class="rectanglecopy51"></div>
+				<div class="signupandlearnab">Sign up and learn about upcoming VIP events first!</div>
+				<div class="email">Email</div>
+				<div class="miscbigbuttoncopy8">
+					<button class="background13"></button>
+					<div class="upgarde7">Sign Up</div>
+				</div>
+			</div>
+			<div class="contact-us-block">
+				<div class="dontseesomethingy">DONT SEE SOMETHING YOU LIKE?</div>
+				<div class="miscbigbuttoncopy">
+					<button class="button-contact">
+						<div class="upgarde">Contact Us</div>
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="a2018eeallright">© 2018 EE. All rights reserved.</div>
+</div>
 <div class="container">
 	<div class="panel panel-default">
 		<div class="panel-body">
@@ -46,37 +114,7 @@ $categories = $store->get_categories();
 			</form>
 		</div>
 	</div>
-	<br><br>
-	<div class="row">
-		<?php foreach ($items as $item) { ?>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="<?= $item['image']['src'] ?>" alt="...">
-					<div class="caption">
-						<h3><?= $item['title'] ?></h3>
-						<?= $item['body_html'] ?>
-						<p>
-						<form>
-							<input type="hidden" name="page" value="order">
-							<input type="hidden" name="shop" value="<?=$shop_type?>">
-							<div class="form-group">
-								<select name="variant_id" class="form-control">
-									<?php foreach ($item['variants'] as $variant) { ?>
-										<option value="<?=$variant['id']?>"><?=$variant['title'].' $'.$variant['price']?></option>
-									<?php } ?>
-								</select>
-							</div>
-							<div class="form-group">
-								<button class="btn btn-primary">Make Order</button>
-							</div>
-						</form>
-						</p>
-					</div>
-				</div>
-			</div>
-		<? } ?>
-	</div>
 </div>
 <pre>
-	<?= $store->json; ?>
+	<?php print_r($store->json); ?>
 </pre>
