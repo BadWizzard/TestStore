@@ -9,7 +9,7 @@ $orders = $store->get_orders();
 <pre>
 	<? var_dump($order)?>
 </pre>
-
+ 
 Orders
 <pre>
 	<? var_dump($orders)?>
