@@ -9,6 +9,35 @@
 if (isset($_GET['page'])) {
 	include $_GET['page'] . '.php';
 }
+$api_key = "fd9ef66e747ba28b32924030a21a7ba8";
+$shared_secret = "d58d169635887ce098f88fed71b08f83";
+$params = [
+	'code' => 'fed726bec45e218718bcf1de421fcb68',
+	'shop' => 'testsexshop.myshopify.com'
+];
+// Set variables for our request
+$query = array(
+	"client_id" => $api_key, // Your API key
+	"client_secret" => $shared_secret, // Your app credentials (secret key)
+	"code" => $params['code'] // Grab the access key from the URL
+);
+
+// Generate access token URL
+$access_token_url = "https://" . $params['shop'] . "/admin/oauth/access_token";
+
+// Configure curl client and execute request
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $access_token_url);
+curl_setopt($ch, CURLOPT_POST, count($query));
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($query));
+$result = curl_exec($ch);
+curl_close($ch);
+
+// Store the access token
+$result = json_decode($result, true);
+$access_token = $result['access_token'];
+echo $access_token;
 ?><!--Product Browser-->
 	<!--<div id="my-store-14321398"></div>
 	<div>
