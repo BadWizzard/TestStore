@@ -1,4 +1,6 @@
 <?php
+$variant_id = isset($_GET['variant_id']) ? $_GET['variant_id'] : 12373688451187;
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -9,7 +11,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
-	CURLOPT_POSTFIELDS => "{\r\n  \"checkout\": {\r\n    \"line_items\": [\r\n      {\r\n        \"variant_id\": 12284932423795,\r\n        \"quantity\": 1\r\n      }\r\n    ]\r\n  }\r\n}",
+	CURLOPT_POSTFIELDS => "{\r\n  \"checkout\": {\r\n    \"line_items\": [\r\n      {\r\n        \"variant_id\": ".$variant_id.",\r\n        \"quantity\": 1\r\n      }\r\n    ]\r\n  }\r\n}",
 	CURLOPT_HTTPHEADER => array(
 		"cache-control: no-cache",
 		"content-type: application/json;charset=utf-8",
