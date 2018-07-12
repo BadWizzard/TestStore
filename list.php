@@ -73,7 +73,6 @@ $categories = $store->get_categories();
 
 
 	</div>
-	<div class="a2018eeallright">© 2018 EE. All rights reserved.</div>
 </div>
 <div class="container">
 	<div class="panel panel-default">
