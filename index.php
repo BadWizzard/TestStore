@@ -37,7 +37,7 @@ curl_close($ch);
 // Store the access token
 $result = json_decode($result, true);
 $access_token = $result['access_token'];
-echo $access_token;
+var_dump($result);
 ?><!--Product Browser-->
 	<!--<div id="my-store-14321398"></div>
 	<div>
