@@ -1,4 +1,4 @@
-<div id='product-component-2cfa451b8fe'></div>
+<div id='product-component-5b0fcab5f7f'></div>
 <script type="text/javascript">
 	/*<![CDATA[*/
 
@@ -32,11 +32,13 @@
 			ShopifyBuy.UI.onReady(client).then(function (ui) {
 				ui.createComponent('product', {
 					id: [1210943799411],
-					node: document.getElementById('product-component-2cfa451b8fe'),
+					node: document.getElementById('product-component-5b0fcab5f7f'),
 					moneyFormat: '%24%7B%7Bamount%7D%7D',
 					options: {
 						"product": {
+							"buttonDestination": "checkout",
 							"variantId": "all",
+							"width": "240px",
 							"contents": {
 								"imgWithCarousel": false,
 								"variantTitle": false,
@@ -44,13 +46,19 @@
 								"buttonWithQuantity": false,
 								"quantity": false
 							},
+							"text": {
+								"button": "BUY NOW"
+							},
 							"styles": {
 								"product": {
 									"@media (min-width: 601px)": {
-										"max-width": "calc(25% - 20px)",
-										"margin-left": "20px",
+										"max-width": "100%",
+										"margin-left": "0",
 										"margin-bottom": "50px"
 									}
+								},
+								"compareAt": {
+									"font-size": "12px"
 								}
 							}
 						},
