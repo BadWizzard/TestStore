@@ -30,7 +30,7 @@ $items = $store->get_all_items();
 							<div class="onticketmastercom3">on ticketmaster.com</div>
 							<div class="miscbigbuttoncopy5 buy-button">
 								<div class="background7"></div>
-								<form action="order.php">
+								<form>
 									<input type="hidden" name="page" value="order">
 									<input type="hidden" name="shop" value="<?=$shop_type?>">
 									<input type="hidden" name="variant_id" value="<?=$item['id_variant']?>">
