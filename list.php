@@ -7,6 +7,7 @@ $store = new Store($shop_type);
 $items = $store->get_all_items();
 //$categories = $store->get_categories();
 ?>
+
 <div class="desktophd">
 	<div style="height: 100%; position:relative; margin:auto;">
 		<div class="header">
