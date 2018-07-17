@@ -4,8 +4,8 @@ require_once 'Store.php';
 $shop_type = isset($_GET['shop']) || $_GET['shop'] ? $_GET['shop'] : 'shopify';
 $store = new Store($shop_type);
 //$items = $store->get_items_by_type('underwear');
-$items = $store->get_items_by_tag_an_type();
-$categories = $store->get_categories();
+$items = $store->get_all_items();
+//$categories = $store->get_categories();
 ?>
 <div class="desktophd">
 	<div style="height: 100%; position:relative; margin:auto;">
@@ -32,8 +32,8 @@ $categories = $store->get_categories();
 								<form>
 									<input type="hidden" name="page" value="order">
 									<input type="hidden" name="shop" value="<?=$shop_type?>">
-									<input type="hidden" name="variant_id" value="<?=$item['variants'][0]['id']?>">
-									<button class="upgarde4" style="border: 0;">$<?=$item['variants'][0]['price']?> Upgrade Now</button>
+									<input type="hidden" name="variant_id" value="<?=$item['id_variant']?>">
+									<button class="upgarde4" style="border: 0;">$<?=$item['price']?> Upgrade Now</button>
 								</form>
 							</div>
 							<div class="miscbigbuttoncopy43 buy-button">
@@ -70,8 +70,6 @@ $categories = $store->get_categories();
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 </div>
 <div class="container">
@@ -114,6 +112,7 @@ $categories = $store->get_categories();
 		</div>
 	</div>
 </div>
+
 <pre>
 	<?php print_r($store->json); ?>
 </pre>
