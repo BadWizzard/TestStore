@@ -1,15 +1,10 @@
 <?php
 require_once 'Store.php';
-
-$shop_type = isset($_GET['shop']) || $_GET['shop'] ? $_GET['shop'] : 'shopify';
-$store = new Store($shop_type);
-//$items = $store->get_items_by_type('underwear');
+$store = new Store();
 $items = $store->get_all_items();
-//$categories = $store->get_categories();
 ?>
 <script>
 	var products = <?=json_encode($items)?>;
-	var shop = '<?=$shop_type?>';
 </script>
 <div class="modal" id="mymodal" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">

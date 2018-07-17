@@ -14,88 +14,58 @@ class Store
 	public function __construct($store = 'shopify')
 	{
 		$this->store = $store;
-		if($this->store == 'shopify') {
-			$this->url = "https://".SHOPIFY_STORE.".myshopify.com/api/graphql";
-			//$this->url = "https://".SHOPIFY_PUPLIC_TOKEN.":".SHOPIFY_PRIVATE_TOKEN."@testsexshop.myshopify.com/admin/";
-			//https://testsexshop.myshopify.com/admin/products.json?X-Shopify-Storefront-Access-Token=36c8229ef4432e67f27daf14035e721a&product_type=underwear
-		} else {
-			$this->url = "";
-		}
+		$this->url = "https://".SHOPIFY_STORE.".myshopify.com/api/graphql";
 	}
 
 	function get_all_items()
 	{
 		$products = [];
-		if ($this->store == 'shopify') {
-			$products_curl = $this->get_curl_shopify([
-				'post_fields' => "{
-								  shop {
-									products(first: 100) {
-									  edges {
-										node {
-										  title,
-										  description,
-										  priceRange {
-										  maxVariantPrice {
-											amount,
-											currencyCode
-										  }
-										  },
-										  variants(first: 1) {
-											edges {
-											  node {
-												id
-											  }
-											}
+		$products_curl = $this->get_curl_shopify([
+			'post_fields' => "{
+							  shop {
+								products(first: 100) {
+								  edges {
+									node {
+									  title,
+									  description,
+									  priceRange {
+									  maxVariantPrice {
+										amount,
+										currencyCode
+									  }
+									  },
+									  variants(first: 1) {
+										edges {
+										  node {
+											id
 										  }
 										}
 									  }
 									}
 								  }
-								}"
-			]);
+								}
+							  }
+							}"
+		]);
 
-			$products_curl = $products_curl['data']['shop']['products']['edges'];
-			if($products_curl) {
-				foreach ($products_curl as $product) {
-					$product = $product['node'];
-					$products[] = [
-						'title' => $product['title'],
-						'price' => $product['priceRange']['maxVariantPrice']['amount'],
-						'price_currency' => $product['priceRange']['maxVariantPrice']['currencyCode'],
-						'id_variant' => $product['variants']['edges'][0]['node']['id'],
-						'description' => $product['description']
-					];
-				}
+		$products_curl = $products_curl['data']['shop']['products']['edges'];
+		if($products_curl) {
+			foreach ($products_curl as $product) {
+				$product = $product['node'];
+				$products[] = [
+					'title' => $product['title'],
+					'price' => $product['priceRange']['maxVariantPrice']['amount'],
+					'price_currency' => $product['priceRange']['maxVariantPrice']['currencyCode'],
+					'id_variant' => $product['variants']['edges'][0]['node']['id'],
+					'description' => $product['description']
+				];
 			}
-		} else {
-
 		}
 		return $products;
 	}
-	function get_items_by_tag_an_type()
-	{
-		$url = "products.json?";
-		if(isset($_GET['product_type']) && $_GET['product_type']) {
-			$url .= 'product_type='.$_GET['product_type'];
-		}
-		if(isset($_GET['tag']) && $_GET['tag']) {
-			$url .= '&tag='.$_GET['tag'];
-		}
-		$items = [];
-		if ($this->store == 'shopify') {
-			$items_curl = $this->get_curl($url);
-			foreach ($items_curl['products'] as $item) {
-				$items[] = $item;
-			}
-		} else {
 
-		}
-		return $items;
-	}
 	function get_categories()
 	{
-		$categories = [];
 		$categories = [
 			'product_type' => [
 				'underwear'
@@ -105,97 +75,32 @@ class Store
 				'vintage'
 			]
 		];
-		/*if ($this->store == 'shopify') {
-			$items_curl = $this->get_curl($url);
-			foreach ($items_curl['products'] as $item) {
-				$items[] = $item;
-			}
-		} else {
-
-		}*/
 		return $categories;
 	}
-	function get_items_by_type($type)
-	{
-		$items = [];
-		if ($this->store == 'shopify') {
-			$items_curl = $this->get_curl("products.json?product_type=".$type);
-			foreach ($items_curl['products'] as $item) {
-				$items[] = $item;
-			}
-		} else {
-
-		}
-		return $items;
-	}
-
-	function get_items_by_tag($tag)
-	{
-		$items = [];
-		if ($this->store == 'shopify') {
-			$items_curl = $this->get_curl("products.json?tag=".$tag);
-			foreach ($items_curl['products'] as $item) {
-				$items[] = $item;
-			}
-		} else {
-
-		}
-		return $items;
-	}
-
-	/*function make_order($variant_id)
-	{
-		$order = '';
-		if ($this->store == 'shopify') {
-			$post_fields = "{\r\n  \"checkout\":{\r\n    \"email\": \"john.smith@example.com\",\r\n    \"line_items\": [{\r\n      \"variant_id\": 12373688451187,\r\n      \"quantity\": 3\r\n    }],\r\n    \"shipping_address\": {\r\n      \"first_name\": \"John\",\r\n      \"last_name\": \"Smith\",\r\n      \"address1\": \"126 York St.\",\r\n      \"city\": \"Ottawa\",\r\n      \"province_code\": \"ON\",\r\n      \"country_code\": \"CA\",\r\n      \"phone\": \"(123)456-7890\",\r\n      \"zip\": \"K1N 5T5\"\r\n    }\r\n  }\r\n}";
-			$headers = ["content-type: application/json;charset=utf-8",
-				"X-Shopify-Access-Token: 36c8229ef4432e67f27daf14035e721a"];
-			$order = $this->get_curl('checkouts.json', 'POST', $post_fields, $headers);
-		} else {
-
-		}
-		return $order;
-	}*/
 
 	function make_order($variant_id, $quantity = 1)
 	{
-		$order = [];
-		if ($this->store == 'shopify') {
-			$order = $this->get_curl_shopify([
-				'post_fields' => 'mutation {
-								  checkoutCreate(input: {
-									lineItems: [{ variantId: "'.$variant_id.'", quantity: '.$quantity.' }]
-								  }) {
-									checkout {
-									   id
-									   webUrl
-									   lineItems(first: 100) {
-										 edges {
-										   node {
-											 title
-											 quantity
-										   }
-										 }
+		$order = $this->get_curl_shopify([
+			'post_fields' => 'mutation {
+							  checkoutCreate(input: {
+								lineItems: [{ variantId: "'.$variant_id.'", quantity: '.$quantity.' }]
+							  }) {
+								checkout {
+								   id
+								   webUrl
+								   lineItems(first: 100) {
+									 edges {
+									   node {
+										 title
+										 quantity
 									   }
-									}
-								  }
-								}'
-			]);
-		} else {
-
-		}
+									 }
+								   }
+								}
+							  }
+							}'
+		]);
 		return $order;
-	}
-
-	function get_orders()
-	{
-		$orders = '';
-		if ($this->store == 'shopify') {
-			$orders = $this->get_curl('orders.json');
-		} else {
-
-		}
-		return $orders;
 	}
 
 	function get_curl_shopify($params)

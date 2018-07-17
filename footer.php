@@ -5,16 +5,6 @@
 </script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-	$('.upgrade-btn').click(function () {
-		var modal = $('#mymodal');
-		var product = products[Number($(this).attr('js-index'))];
-		modal.find('#prod-title').text(product.title);
-		modal.find('#prod-desc').html(product.description);
-		modal.find('#prod-price').text(product.price);
-		modal.find('[name=shop]').val(shop);
-		modal.find('[name=variant_id]').val(product.id_variant);
-	})
-</script>
+<script src="/js/main.js"></script>
 </body>
 </html>
