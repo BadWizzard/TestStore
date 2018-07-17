@@ -63,7 +63,8 @@ class Store
 						'title' => $product['title'],
 						'price' => $product['priceRange']['maxVariantPrice']['amount'],
 						'price_currency' => $product['priceRange']['maxVariantPrice']['currencyCode'],
-						'id_variant' => $product['variants']['edges'][0]['node']['id']
+						'id_variant' => $product['variants']['edges'][0]['node']['id'],
+						'description' => $product['description']
 					];
 				}
 			}
@@ -235,8 +236,8 @@ class Store
 			echo "cURL Error #:" . $err;
 			exit;
 		} else {
-			$this->json = json_decode($response, true);
-			return $this->json;
+			$this->json = $response;
+			return json_decode($response, true);
 		}
 	}
 }

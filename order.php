@@ -9,12 +9,6 @@ $order = $store->make_order($_GET['variant_id'], 1);
 ?>
 
 <h1><a href="<?=$order['data']['checkoutCreate']['checkout']['webUrl']?>">Click on this link to finish order</a></h1>
-<h2>Order Status</h2>
-<pre>
-	<?php print_r($order)?>
-</pre>
-
-<h2>Orders</h2>
-<pre>
-	<?php //print_r($orders)?>
-</pre>
+<script>
+	console.log(<?php print_r($store->json); ?>);
+</script>

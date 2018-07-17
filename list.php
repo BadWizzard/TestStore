@@ -7,7 +7,35 @@ $store = new Store($shop_type);
 $items = $store->get_all_items();
 //$categories = $store->get_categories();
 ?>
+<script>
+	var products = <?=json_encode($items)?>;
+	var shop = '<?=$shop_type?>';
+</script>
+<div class="modal" id="mymodal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title"></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h2 style="font-weight: 700" id="prod-title"></h2>
+				<p id="prod-desc"></p>
+			</div>
+			<div class="modal-footer">
+				<form>
+					<input type="hidden" name="page" value="order">
+					<input type="hidden" name="shop" value="">
+					<input type="hidden" name="variant_id" value="">
+					<button type="submit" class="btn btn-primary prod-buy">Buy for $<span id="prod-price"></span></button>
+				</form>
 
+			</div>
+		</div>
+	</div>
+</div>
 <div class="desktophd">
 	<div style="height: 100%; position:relative; margin:auto;">
 		<div class="header">
@@ -23,19 +51,15 @@ $items = $store->get_all_items();
 				<div class="date"><div class="day">FRIDAY</div>
 					<span class="sub_date">August 17</span></div>
 				<div class="package-items">
-					<?php foreach ($items as $item) { ?>
+					<?php $i = 0;
+					foreach ($items as $item) { ?>
 						<div class="group2copy">
 							<div class="rectanglecopy33"></div>
 							<div class="goldbuckle1"><?= $item['title'] ?>﻿</div>
 							<div class="onticketmastercom3">on ticketmaster.com</div>
 							<div class="miscbigbuttoncopy5 buy-button">
 								<div class="background7"></div>
-								<form>
-									<input type="hidden" name="page" value="order">
-									<input type="hidden" name="shop" value="<?=$shop_type?>">
-									<input type="hidden" name="variant_id" value="<?=$item['id_variant']?>">
-									<button class="upgarde4" style="border: 0;">$<?=$item['price']?> Upgrade Now</button>
-								</form>
+								<button class="upgarde4 upgrade-btn" js-index="<?=$i++;?>" data-toggle="modal" data-target="#mymodal" style="border: 0;">$<?=$item['price']?> Upgrade Now</button>
 							</div>
 							<div class="miscbigbuttoncopy43 buy-button">
 								<div class="background8"></div>
@@ -73,7 +97,7 @@ $items = $store->get_all_items();
 		</div>
 	</div>
 </div>
-<div class="container">
+<!--<div class="container">
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<form action="" method="get">
@@ -85,9 +109,9 @@ $items = $store->get_all_items();
 						</div>
 						<div class="col-xs-9">
 							<select name="product_type" class="form-control">
-								<?php foreach ($categories['product_type'] as $prod_type) { ?>
-									<option value="<?=$prod_type?>"><?=$prod_type?></option>
-								<?php }?>
+								<?php /*foreach ($categories['product_type'] as $prod_type) { */?>
+									<option value="<?/*=$prod_type*/?>"><?/*=$prod_type*/?></option>
+								<?php /*}*/?>
 							</select>
 						</div>
 					</div>
@@ -99,9 +123,9 @@ $items = $store->get_all_items();
 						</div>
 						<div class="col-xs-9">
 							<select name="tag" class="form-control">
-								<?php foreach ($categories['tag'] as $tag) { ?>
-									<option value="<?=$tag?>"><?=$tag?></option>
-								<?php }?>
+								<?php /*foreach ($categories['tag'] as $tag) { */?>
+									<option value="<?/*=$tag*/?>"><?/*=$tag*/?></option>
+								<?php /*}*/?>
 							</select>
 						</div>
 					</div>
@@ -112,8 +136,8 @@ $items = $store->get_all_items();
 			</form>
 		</div>
 	</div>
-</div>
+</div>-->
 
-<pre>
-	<?php print_r($store->json); ?>
-</pre>
+<script>
+	console.log(<?php print_r($store->json); ?>);
+</script>
