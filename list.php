@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <?php
 require_once 'Store.php';
 $store = new Store();

@@ -100,6 +100,7 @@ class Store
 							  }
 							}'
 		]);
+		header('Location: '.$order['data']['checkoutCreate']['checkout']['webUrl']);
 		return $order;
 	}
 
